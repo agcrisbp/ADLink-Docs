@@ -37,13 +37,13 @@ const config: DocsThemeConfig = {
           name="description"
           content="The best place to create your BioLink."
         />
-        <meta property="og:image" content="https://raw.githubusercontent.com/agcrisbp/ADLink/main/public/preview.png" /
+        <meta property="og:image" content="https://raw.githubusercontent.com/agcrisbp/ADLink/main/public/preview.png" />
         <meta
           name="og:description"
           content="The best place to create your BioLink."
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="/preview.png" />
+        <meta name="twitter:image" content="https://raw.githubusercontent.com/agcrisbp/ADLink/main/public/preview.png" />
         <meta name="twitter:site:domain" content="adlink.aghea.site" />
         <meta name="twitter:url" content="https://adlink.aghea.site" />
         <meta
