@@ -82,7 +82,7 @@ const config: DocsThemeConfig = {
           </a>
         </div>
         <p className="mt-6 text-xs">
-          © {new Date().getFullYear()} ADLink. All Rights Reserved.
+          © {new Date().getFullYear()} <a href="https://agcrisbp.my.id" target="_blank">Agcrismanto Budhi Praswastyka</a>. All Rights Reserved.
         </p>
       </div>
     )
