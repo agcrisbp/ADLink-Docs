@@ -37,6 +37,7 @@ const config: DocsThemeConfig = {
           name="description"
           content="The best place to create your BioLink."
         />
+        <meta property="og:image" content="https://raw.githubusercontent.com/agcrisbp/ADLink/main/public/preview.png" /
         <meta
           name="og:description"
           content="The best place to create your BioLink."
@@ -49,7 +50,7 @@ const config: DocsThemeConfig = {
           name="og:title"
           content="ADLink"
         />
-        <meta name="og:image" content="/preview.png" />
+        <meta name="og:image" content="https://raw.githubusercontent.com/agcrisbp/ADLink/main/public/preview.png" />
         <meta name="apple-mobile-web-app-title" content="ADLink" />
         <link rel="icon" href="/sign.png" type="image/png" />
       </>
