@@ -1,0 +1,51 @@
+---
+title: Frontend
+---
+>All frontend customization done inside `components/WebLinks.js`. If you want to update and add new section just look this file and update according to your need.
+
+### Add New section
+- Add new section with specific `type` in `Linkdata.js`. Then copy `LinkSection` Code to create new section in `WebLinks.js` file. Make sure to create get data of that section as well.
+
+### Add Discord Status
+- Read [Lanyard Documentation](https://github.com/Phineas/lanyard) and you **MUST** join their Discord Server.
+- After you joining, DM Lanyard Bot by copying this:
+
+```bash
+.getapikey
+.set YourCode YourName
+```
+
+- Example:
+
+```bash
+.set 6666 agcrisbp
+```
+
+- The bot will give you a link, copy and paste the link into:
+```js filename="pages/api/online.ts (Line 7)"
+const response = await fetch(
+    `PASTE_HERE`
+  ).then((res) => res.json());
+```
+
+- Set `online: false,` in `data/BioData.js` to hide this option.
+
+### Add Spotify Status
+>ADLink APi is temporarily disabled due to limited usage and is currently under development.
+
+- Login to [https://spotify-github-profile.vercel.app/api/login](https://spotify-github-profile.vercel.app/api/login).
+
+- Follow these steps:
+<center><img src="/spotify.png" width="300" height="300" /></center>
+
+> Or you can create your own Spotify APi: [Read Documentation](https://bit.ly/Spotify-ADLink).
+
+- Copy and paste the URL to:
+```js filename="data/BioData.js"
+spotifyUrl: 'FIRST_URL',
+spotifyImg: 'SECOND_URL',
+```
+
+>The APi only store `Access Token`, `Refresh Token`, and `Token Expired Timestamp`, see [here](https://twitter.com/agcrisbp/status/1662804319341801472).
+
+- Same as Discord Status, set `spotify: false,` in `data/BioData.js` to hide this option.

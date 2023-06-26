@@ -1,0 +1,31 @@
+{
+  "name": "ADLink-Docs",
+  "version": "24.0.1",
+  "description": "ADLink Documentation",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agcrisbp/ADLink-Docs.git"
+  },
+  "author": "agcrisbp <agcrisbp@email.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/agcrisbp/ADLink-Docs/issues"
+  },
+  "homepage": "https://adlink.aghea.site",
+  "dependencies": {
+    "next": "^13.4.7",
+    "nextra": "latest",
+    "nextra-theme-docs": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.3.1",
+    "typescript": "^5.1.3"
+  }
+}

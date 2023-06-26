@@ -1,0 +1,91 @@
+---
+title: Update BioData & LinksData
+---
+
+```js filename="data/BioData.js" showLineNumbers
+const bioData = [
+    {
+        name: 'Your Name',
+        titleImg: true, //set to false to hide the image and show your name
+        online: true,
+        url: '#', //redirect when someone click your online status
+        avatar: '/favicon.ico', //put your profile photo to public folder
+        nftAvatar: true,
+        description: 'About You',
+        descShow: true,
+        subdesc: 'OPTIONAL',
+        subdescShow: false,
+        spotify: true,
+        spotifyText: 'Recently Played',
+        spotifyUrl: 'FIRST URL',
+        spotifyImg: 'SECOND URL',
+        tweet: true,
+        tweetUrl: '#', //your Twitter profile URL
+        tweetTheme: 'dark' //dark or light
+    },
+];
+
+export default bioData;
+```
+- **Avatar**: 1:1 image will be good. You also can use a link, I use <a href="https://imgbb.com" target="_blank">imgbb.com</a>.
+
+- **Hex/NFT Avatar View**: `nftAvatar: true` enable hex shape on avatar image. `nftAvatar: false` made it in oval shape.
+
+---
+
+```js filename="data/LinksData.js" showLineNumbers
+const webLinks = [
+    // All social profile
+    {
+        title: 'Twitter',
+        url: 'https://twitter.com/',
+        type: 'social',
+        icon: '/twitter.svg',
+        on: true
+    },
+    
+    // Other section
+
+    {
+        title: 'Use this template',
+        url: 'https://bit.ly/ADLink-Docs',
+        type: 'other',
+        icon: '/use.png',
+        on: true
+    },
+
+export default webLinks;
+```
+
+### Enable/Disable Social Media
+- Find `type: social` and change `on:true|false`.
+
+| Title           | on (default)    | 
+| :------------ | ----------: |
+| `Twitter`       | `true`          | 
+| `Instagram`     | `false`          | 
+| `Medium`        | `false`          | 
+| `Github`        | `true`          | 
+| `Youtube`       | `true`          | 
+| `Linkedin`      | `true`          | 
+| `Email`         | `true`          |
+| `Tiktok`    | `false`          | 
+| `Post.news`      | `false`          | 
+
+>- Setting `on: true` show the social icon. 
+>- The social media icons are arranged in a single row at the top of the page below description. If you want to use as list, change type to `type: 'other'`.
+
+### Add New Social Media Link
+
+- Create a new block by copying this:
+```js filename="data/LinksData.js" copy
+{
+   title: 'Social Name',
+   url: 'https://example.com/',
+   type: 'social',
+   icon: '/icon.png',
+   on: true
+}
+```
+
+- Update all info and make sure to add a `icon.png` file in [public](/en/docs/directory-structure) folder.

@@ -1,0 +1,47 @@
+---
+title: Frontend
+---
+>Semua kustomisasi frontend berada di `components/WebLinks.js`. Jika kamu ingin mengubah atau menambahkan sesi baru, tambahkan di sini.
+
+### Menambah Sesi Baru
+
+- Menambahkan sesi baru dengan `type` spesifik di `Linkdata.js`. Lalu salin kode `LinkSection` untuk membuat sesi baru di `WebLinks.js`. Pastikan juga untuk membuat data baru untuk sesi tersebut.
+
+### Menambah Status Discord
+- Baca [Dokumentasi Lanyard](https://github.com/Phineas/lanyard) dan kamu **HARUS** bergabung di Discord Server mereka.
+- Jika sudah, DM Lanyard Bot dengan perintah berikut:
+```bash
+.getapikey
+.set YourCode YourName
+```
+- Contoh:
+```bash
+.set 6666 agcrisbp
+```
+- Bot Lanyard akan mengirim sebuah tautan, salin dan tempelkan tautan tersebut di:
+```js filename="pages/api/online.ts (Line 7)"
+const response = await fetch(
+    `PASTE_HERE`
+  ).then((res) => res.json());
+```
+- Ubah `online: false,` di `data/BioData.js` untuk menyembunyikannya.
+
+### Menambah Status Spotify
+>APi khusus untuk ADLink dimatikan sementara waktu karena limitnya penggunaan dan sedang dalam proses pengembangan.
+
+- Masuk ke [https://spotify-github-profile.vercel.app/api/login](https://spotify-github-profile.vercel.app/api/login).
+
+- Ikuti langkah berikut:
+<center><img src="/spotify.png" width="300" height="300" /></center>
+
+> Atau, kamu bisa membuat Spotify APi kamu sendiri: [Baca Dokumentasi](https://bit.ly/Spotify-ADLink).
+
+- Lalu salin dan tempel tautan APi ke:
+```js filename="data/BioData.js"
+spotifyUrl: 'FIRST_URL',
+spotifyImg: 'SECOND_URL',
+```
+
+>APi tersebut hanya menyimpan `Token Akses`, `Token Refresh`, dan `Waktu Kadaluarsa Token`. Lihat [di sini](https://twitter.com/agcrisbp/status/1662804319341801472).
+
+- Sama seperti Status Discord, ubah `spotify: false,` di `data/BioData.js` untuk menyembunyikan.
