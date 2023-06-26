@@ -31,7 +31,7 @@ const config: DocsThemeConfig = {
         <meta httpEquiv="Content-Language" content="en" />
         <meta
           name="title"
-          content="ADLink"
+          content="ADLink Documentation"
         />
         <meta
           name="description"
@@ -48,10 +48,10 @@ const config: DocsThemeConfig = {
         <meta name="twitter:url" content="https://adlink.aghea.site" />
         <meta
           name="og:title"
-          content="ADLink"
+          content="ADLink Documentation"
         />
         <meta name="og:image" content="https://raw.githubusercontent.com/agcrisbp/ADLink/main/public/preview.png" />
-        <meta name="apple-mobile-web-app-title" content="ADLink" />
+        <meta name="apple-mobile-web-app-title" content="ADLink Documentation" />
         <link rel="icon" href="/sign.png" type="image/png" />
       </>
     )
