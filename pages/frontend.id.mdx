@@ -1,7 +1,11 @@
 ---
 title: Frontend
 ---
->Semua kustomisasi frontend berada di `components/WebLinks.js`. Jika kamu ingin mengubah atau menambahkan sesi baru, tambahkan di sini.
+import { Callout, Tab, Tabs, FileTree } from 'nextra-theme-docs'
+
+<Callout type="info">
+Semua kustomisasi frontend berada di `components/WebLinks.js`. Jika kamu ingin mengubah atau menambahkan sesi baru, tambahkan di sini.
+</Callout>
 
 ### Menambah Sesi Baru
 
@@ -27,14 +31,18 @@ const response = await fetch(
 - Ubah `online: false,` di `data/BioData.js` untuk menyembunyikannya.
 
 ### Menambah Status Spotify
->APi khusus untuk ADLink dimatikan sementara waktu karena limitnya penggunaan dan sedang dalam proses pengembangan.
+<Callout type="warning">
+APi khusus untuk ADLink dimatikan sementara waktu karena limitnya penggunaan dan sedang dalam proses pengembangan.
+</Callout>
 
 - Masuk ke [https://spotify-github-profile.vercel.app/api/login](https://spotify-github-profile.vercel.app/api/login).
 
 - Ikuti langkah berikut:
 <center><img src="/spotify.png" width="300" height="300" /></center>
 
-> Atau, kamu bisa membuat Spotify APi kamu sendiri: [Baca Dokumentasi](https://bit.ly/Spotify-ADLink).
+<Callout type="info">
+Atau, kamu bisa membuat Spotify APi kamu sendiri: [Baca Dokumentasi](https://bit.ly/Spotify-ADLink).
+</Callout>
 
 - Lalu salin dan tempel tautan APi ke:
 ```js filename="data/BioData.js"
@@ -42,6 +50,8 @@ spotifyUrl: 'FIRST_URL',
 spotifyImg: 'SECOND_URL',
 ```
 
->APi tersebut hanya menyimpan `Token Akses`, `Token Refresh`, dan `Waktu Kadaluarsa Token`. Lihat [di sini](https://twitter.com/agcrisbp/status/1662804319341801472).
+<Callout type="info">
+APi tersebut hanya menyimpan `Token Akses`, `Token Refresh`, dan `Waktu Kadaluarsa Token`. Lihat [di sini](https://twitter.com/agcrisbp/status/1662804319341801472).
+</Callout>
 
 - Sama seperti Status Discord, ubah `spotify: false,` di `data/BioData.js` untuk menyembunyikan.

@@ -1,8 +1,11 @@
 ---
 title: Update BioData & LinksData
 ---
+import { Callout, Tab, Tabs, FileTree } from 'nextra-theme-docs'
 
-```js filename="data/BioData.js" showLineNumbers
+<Tabs items={['data/BioData.js', 'data/LinksData.js']}>
+  <Tab>
+    ```js filename="data/BioData.js" {7, 8} showLineNumbers
 const bioData = [
     {
         name: 'Your Name',
@@ -26,14 +29,10 @@ const bioData = [
 ];
 
 export default bioData;
-```
-- **Avatar**: 1:1 image will be good. You also can use a link, I use <a href="https://imgbb.com" target="_blank">imgbb.com</a>.
-
-- **Hex/NFT Avatar View**: `nftAvatar: true` enable hex shape on avatar image. `nftAvatar: false` made it in oval shape.
-
----
-
-```js filename="data/LinksData.js" showLineNumbers
+      ```
+  </Tab>
+  <Tab>
+    ```js filename="data/LinksData.js" {16, 17} showLineNumbers
 const webLinks = [
     // All social profile
     {
@@ -55,7 +54,16 @@ const webLinks = [
     },
 
 export default webLinks;
-```
+      ```
+  </Tab>
+</Tabs>
+
+<Callout type="info">
+- **Avatar**: 1:1 image will be good. You also can use a link, I use <a href="https://imgbb.com" target="_blank">imgbb.com</a>.
+- **Hex/NFT Avatar View**: `nftAvatar: true` enable hex shape on avatar image. `nftAvatar: false` made it in oval shape.
+</Callout>
+
+---
 
 ### Enable/Disable Social Media
 - Find `type: social` and change `on:true|false`.
@@ -72,8 +80,10 @@ export default webLinks;
 | `Tiktok`    | `false`          | 
 | `Post.news`      | `false`          | 
 
->- Setting `on: true` show the social icon. 
->- The social media icons are arranged in a single row at the top of the page below description. If you want to use as list, change type to `type: 'other'`.
+<Callout type="info">
+- Setting `on: true` show the social icon. 
+- The social media icons are arranged in a single row at the top of the page below description. If you want to use as list, change type to `type: 'other'`.
+</Callout>
 
 ### Add New Social Media Link
 
@@ -88,4 +98,6 @@ export default webLinks;
 }
 ```
 
-- Update all info and make sure to add a `icon.png` file in [public](../directory-structure) folder.
+<Callout type="info">
+Update all info and make sure to add a `icon.png` file in [public](../directory-structure) folder.
+</Callout>

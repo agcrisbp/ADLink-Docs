@@ -1,8 +1,11 @@
 ---
 title: Pembaruan BioData & LinksData
 ---
+import { Callout, Tab, Tabs, FileTree } from 'nextra-theme-docs'
 
-```js filename="data/BioData.js" showLineNumbers
+<Tabs items={['data/BioData.js', 'data/LinksData.js']}>
+  <Tab>
+    ```js filename="data/BioData.js" {7, 8} showLineNumbers
 const bioData = [
     {
         name: 'Your Name',
@@ -26,13 +29,10 @@ const bioData = [
 ];
 
 export default bioData;
-```
-- **Avatar**: Gunakan foto berukuran 1:1 atau persegi. Atau gunakan tautan dari foto yang kamu unggah di [imgbb.com](https://imgbb.com).
-- **Hex/NFT Avatar View**: `nftAvatar: true` membuat bentuk foto menjadi NFT/Heksagon. `nftAvatar: false` berbentuk oval.
-
----
-
-```js filename="data/LinksData.js" showLineNumbers
+      ```
+  </Tab>
+  <Tab>
+    ```js filename="data/LinksData.js" {16, 17} showLineNumbers
 const webLinks = [
     // All social profile
     {
@@ -54,7 +54,16 @@ const webLinks = [
     },
 
 export default webLinks;
-```
+      ```
+  </Tab>
+</Tabs>
+
+<Callout type="info">
+- **Avatar**: Gunakan foto berukuran 1:1 atau persegi. Atau gunakan tautan dari foto yang kamu unggah di [imgbb.com](https://imgbb.com).
+- **Hex/NFT Avatar View**: `nftAvatar: true` membuat bentuk foto menjadi NFT/Heksagon. `nftAvatar: false` berbentuk oval.
+</Callout>
+
+---
 
 ### Tampilkan/Sembunyikan Sosial Media
 - Cari `type: social` dan ubah `on:true|false`.
@@ -86,4 +95,7 @@ export default webLinks;
    on: true
 }
 ```
-- Ubah semua info dan pastikan kamu menambahkan `icon.png` di folder [public](../directory-structure).
+
+<Callout type="info">
+Ubah semua info dan pastikan kamu menambahkan `icon.png` di folder [public](../directory-structure).
+</Callout>
