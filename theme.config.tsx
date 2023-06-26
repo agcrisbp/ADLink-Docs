@@ -56,14 +56,7 @@ const config: DocsThemeConfig = {
       </>
     )
   },
-  // banner: {
-  //   key: '2.0-release',
-  //   text: (
-  //     <a href="https://nextra.site" target="_blank" rel="noreferrer">
-  //       🎉 Nextra 2.0 is released. Read more →
-  //     </a>
-  //   )
-  // },
+
   i18n: [
   { locale: 'en', text: 'English' },
   { locale: 'id', text: 'Bahasa' }
