@@ -35,12 +35,12 @@ const config: DocsThemeConfig = {
         />
         <meta
           name="description"
-          content="The best place to create your BioLink."
+          content="The best place to create your landing page for your links on the world wide web."
         />
         <meta property="og:image" content="https://raw.githubusercontent.com/agcrisbp/ADLink/main/public/preview.png" />
         <meta
           name="og:description"
-          content="The best place to create your BioLink."
+          content="The best place to create your landing page for your links on the world wide web."
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="https://raw.githubusercontent.com/agcrisbp/ADLink/main/public/preview.png" />
