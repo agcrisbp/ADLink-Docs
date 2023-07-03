@@ -9,8 +9,8 @@ import { Callout, Tab, Tabs, FileTree } from 'nextra-theme-docs'
 const bioData = [
     {
         name: 'Your Name',
-        titleImg: true, //set to false to hide the image and show your name
-        online: true,
+        titleImg: false,
+        online: false,
         url: '#', //redirect when someone click your online status
         avatar: '/favicon.ico', //put your profile photo to public folder
         nftAvatar: true,
@@ -18,11 +18,13 @@ const bioData = [
         descShow: true,
         subdesc: 'OPTIONAL',
         subdescShow: false,
-        spotify: true,
+        spotify: false, //set to true to show
         spotifyText: 'Recently Played',
         spotifyUrl: 'FIRST URL',
         spotifyImg: 'SECOND URL',
-        tweet: true,
+        ig: false, //set to true to show
+        igUrl: '#', //add /embed after paste your profile or post link
+        tweet: false, //set to true to show
         tweetUrl: '#', //your Twitter profile URL
         tweetTheme: 'dark' //dark or light
     },
@@ -35,6 +37,13 @@ export default bioData;
     ```js filename="data/LinksData.js" {16, 17} showLineNumbers
 const webLinks = [
     // All social profile
+    {
+        title: 'Truth Social',
+        url: 'https://truthsocial.com/',
+        type: 'social',
+        icon: '/truth-social.svg',
+        on: true
+    },
     {
         title: 'Twitter',
         url: 'https://twitter.com/',
@@ -70,6 +79,7 @@ export default webLinks;
 
 | Sosial Media           | on (Bawaan)    | 
 | :------------ | ----------: |
+| `Truth Social`       | `true`          | 
 | `Twitter`       | `true`          | 
 | `Instagram`     | `false`          | 
 | `Medium`        | `false`          | 
