@@ -53,6 +53,7 @@ const config: DocsThemeConfig = {
         <meta name="og:image" content="https://raw.githubusercontent.com/agcrisbp/ADLink/main/public/preview.png" />
         <meta name="apple-mobile-web-app-title" content="ADLink Documentation" />
         <link rel="icon" href="/sign.png" type="image/png" />
+        <script defer src="/_vercel/insights/script.js"></script>
       </>
     )
   },
