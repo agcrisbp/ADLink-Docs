@@ -68,7 +68,15 @@ const config: DocsThemeConfig = {
       </svg>
     )
   },
-
+  
+  banner: {
+    key: 'Download',
+    text: (
+      <a href="https://bit.ly/ADLink-Download" target="_blank" rel="noreferrer">
+        🎉 Download Template →
+      </a>
+    )
+  },
   i18n: [
   { locale: 'en', text: 'English' },
   { locale: 'id', text: 'Bahasa' }
