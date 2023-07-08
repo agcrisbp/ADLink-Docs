@@ -4,7 +4,7 @@
 
 ---
 
-## Add Your Website To Showcase
+## Add Your ADLink Site To Showcase
 - [Fork this repository](https://github.com/agcrisbp/ADLink-Docs/fork) and edit [showcase.en.mdx](/pages/showcase.en.mdx) and [showcase.id.mdx](/pages/showcase.id.mdx) by copying this code:
 ```mdx
 <ShowcaseCard title="YourSite" href="YourSiteURL">
