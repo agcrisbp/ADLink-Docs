@@ -1,11 +1,21 @@
 {
-  "index": "Halaman Utama",
-  "get-started": "Instalasi",
-  "directory-structure": "Struktur Direktori",
-  "update-info": "Pembaruan BioData & LinksData",
+  "index": "Home",
+  "get-started": "Installation",
+  "directory-structure": "Directory Structure",
+  "update-info": "Update BioData & LinksData",
   "frontend": "Frontend",
   "seo": "SEO",
   "google-analytics": "Google Analytics",
-  "custom-domain": "Domain Kustom",
-  "app-to-use": "Aplikasi Edit"
+  "custom-domain": "Custom Domain",
+  "app-to-use": "App To Use",
+  "showcase": {
+    "type": "page",
+    "display": "hidden",
+    "theme": {
+      "breadcrumb": false,
+      "footer": false,
+      "sidebar": true,
+      "pagination": false
+    }
+  }
 }

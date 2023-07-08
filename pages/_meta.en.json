@@ -7,5 +7,15 @@
   "seo": "SEO",
   "google-analytics": "Google Analytics",
   "custom-domain": "Custom Domain",
-  "app-to-use": "App To Use"
+  "app-to-use": "App To Use",
+  "showcase": {
+    "type": "page",
+    "display": "hidden",
+    "theme": {
+      "breadcrumb": false,
+      "footer": false,
+      "sidebar": true,
+      "pagination": false
+    }
+  }
 }
