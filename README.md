@@ -4,5 +4,5 @@
 
 ---
 
-## Add your ADLink site to Showcase by contribute to this repository
+## Add your ADLink site to Showcase
 - [Showcase Submission](https://github.com/agcrisbp/ADLink-Docs/discussions/2).
