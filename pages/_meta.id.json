@@ -9,8 +9,8 @@
   "custom-domain": "Domain Kustom",
   "app-to-use": "Aplikasi Edit",
   "showcase": {
+    "title": "Showcase",
     "type": "page",
-    "display": "hidden",
     "theme": {
       "breadcrumb": false,
       "footer": false,

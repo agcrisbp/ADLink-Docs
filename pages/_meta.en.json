@@ -9,8 +9,8 @@
   "custom-domain": "Custom Domain",
   "app-to-use": "App To Use",
   "showcase": {
+    "title": "Showcase",
     "type": "page",
-    "display": "hidden",
     "theme": {
       "breadcrumb": false,
       "footer": false,
