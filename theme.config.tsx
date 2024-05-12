@@ -91,13 +91,13 @@ const config: DocsThemeConfig = {
             target="_blank"
             rel="noopener noreferrer"
             title="Creator"
-            href="https://aghea.site"
+            href="https://aghea.biz.id/"
           >
             <center><img src="/logo.png" width="100" height="100" /></center>
           </a>
         </div>
         <p className="mt-6 text-xs">
-          © {new Date().getFullYear()} <a href="https://agcrisbp.my.id" target="_blank">Agcrismanto Budhi Praswastyka</a>. All Rights Reserved.
+          © {new Date().getFullYear()} <a href="https://aghea.biz.id/" target="_blank">Agcrismanto Budhi Praswastyka</a>. All Rights Reserved.
         </p>
       </div>
     )
